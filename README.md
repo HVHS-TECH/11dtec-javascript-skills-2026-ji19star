@@ -6,7 +6,7 @@ https://<org-or-user>.github.io/<repo>/
 GitHub Pages is enabled with `.github/workflows/static.yml`.
 
 Visit the site at:
-`https://<USERNAME>.github.io/<REPO>/`
+`https://<ji19star>.github.io/<REPO>/`
 
 > Replace `<USERNAME>` and `<REPO>` with your GitHub username and repo name.
 
