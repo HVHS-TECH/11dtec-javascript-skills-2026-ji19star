@@ -11,4 +11,4 @@ Visit the site at:
 > Replace `<USERNAME>` and `<REPO>` with your GitHub username and repo name.
 
 Site URL after deploy:
-https://<username>.github.io/11DTEC-JavaScriptSkills/
+https://<ji19star>.github.io/11DTEC-JavaScriptSkills/
