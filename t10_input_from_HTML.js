@@ -1,7 +1,7 @@
 
 
 /*************
-task 09
+task 10
 *************/
 
 
@@ -51,6 +51,8 @@ console.log("Gachiakuta PEAK!");
  let two;
 
 //10
+const NAME_FEILD= document.getElementById("nameField");
+let usersName = NAME_FEILD.value;
     
 
 
@@ -93,7 +95,7 @@ console.log("Task 09 running");
 
 //10
 
-
+console.log("task 10 is running")
 
 
 /*************
@@ -113,4 +115,11 @@ functions
     //09
      function start (_one, _two){ 
      OUTPUT.innerHTML += "You pressed "+_one+ " or " +_two+ " Times! <br>";
+    }
+
+    //10
+     function getFormInput (){ 
+     const NAME_FEILD= document.getElementById("nameField");
+     let usersName = NAME_FEILD.value;
+     OUTPUT.innerHTML += "<p>Your name is " +usersName+"</p>";
     }
