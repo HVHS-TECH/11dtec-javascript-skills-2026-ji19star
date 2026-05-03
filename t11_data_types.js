@@ -9,71 +9,73 @@ task 10
 This is a block comment.
 Put your header comment here!
 ****************************/
-console.log("Running t01_introduction.js");
+console.log("Running t11.js");
 console.log("Gachiakuta PEAK!");
 
 
 
 
 //variables
-    
-    let money=2;
 
-    //user
-    let userName="Timothy";
+let money = 2;
 
-    //user age
-    let age=15;
+//user
+let userName = "Timothy";
 
-    //year
-    let year=2026;
+//user age
+let age = 15;
 
-    //html
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput")
+//year
+let year = 2026;
+
+//html
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput")
 
 // maths
 
-    //answer
-   let answer ;
+//answer
+let answer;
 
-   //answer
-   let answer2 ;
+//answer
+let answer2;
 
 //Task 07 
-    let price ;
+let price;
 
-    let name ;
+let name;
 
 //09
 
- let one;
+let one;
 
- let two;
+let two;
 
 //10
-const NAME_FEILD= document.getElementById("nameField");
+const NAME_FEILD = document.getElementById("nameField");
 let usersName = NAME_FEILD.value;
 
 //11
-let userAge = AGE_FEILD.value;
+const MONEY_FEILD = document.getElementById("monField");
+let userMon = MONEY_FEILD.value;
 //thats whats bugging it out sob im so buns
-    
+
+//12
 
 
 /*************
 Main code
 *************/
 
-answer= money/2;
-answer2= answer+3;
+answer = money / 2;
+answer2 = answer + 3;
 
 //task 01,02,03
-console.log ("You got " + money + " moneys");
+console.log("You got " + money + " moneys");
 
 
-console.log ("Hi " +userName+ " As of "+year+" you are " +age+ " years old You have "+money+ " dollars");
+console.log("Hi " + userName + " As of " + year + " you are " + age + " years old You have " + money + " dollars");
 
-console.log("You spend half of your money, now you have " +answer+"$ Then you get $3, now you have " +answer2+"$");
+console.log("You spend half of your money, now you have " + answer + "$ Then you get $3, now you have " + answer2 + "$");
 
 //task 05 HTML
 console.log("Task 05 running");
@@ -87,7 +89,7 @@ console.log("Task 06 running");
 
 //task 07 
 console.log("Task 07 running");
- //displayWelcome()
+//displayWelcome()
 
 displayProduct("Chocolate", 4)
 
@@ -103,35 +105,42 @@ console.log("task 10 is running")
 
 //11
 console.log("task 11 is running")
+console.log(+userMon);
+
+//12
+console.log(+userMon);
+
 
 /*************
 functions
 *************/
-    //adds paragraph WELCOME!!!!
-    function callWelcome (){
-     OUTPUT.innerHTML += "<p> Welcome!</p>";
-    }
+//adds paragraph WELCOME!!!!
+function callWelcome() {
+    OUTPUT.innerHTML += "<p> Welcome!</p>";
+}
 
-  
-      //making sense of it ig
-    function displayProduct (_name, _price){
-     OUTPUT.innerHTML += _name+": " +_price+"$ <br>";
-    }
-    
-    //09
-     function start (_one, _two){ 
-     OUTPUT.innerHTML += "You pressed "+_one+ " or " +_two+ " Times! <br>";
-    }
 
-    //10
-     function getFormInput (){ 
-     const NAME_FEILD= document.getElementById("nameField");
-     let usersName = NAME_FEILD.value;
-     OUTPUT.innerHTML += "<p>Your name is " +usersName+"</p>";
-    }
+//making sense of it ig
+function displayProduct(_name, _price) {
+    OUTPUT.innerHTML += _name + ": " + _price + "$ <br>";
+}
 
-    function getAgeFormInput (){ 
-     const AGE_FEILD= document.getElementById("ageFeild");
-     let userAge = AGE_FEILD.value;
-     OUTPUT.innerHTML += "<p>Your age is " +usersName+"</p>";
-    }
+//09
+function start(_one, _two) {
+    OUTPUT.innerHTML += "You pressed " + _one + " or " + _two + " Times! <br>";
+}
+
+//10
+function getFormInput() {
+    const NAME_FEILD = document.getElementById("nameField");
+    let usersName = NAME_FEILD.value;
+    OUTPUT.innerHTML += "<p>Your name is " + usersName + "</p>";
+}
+//11
+function getMonFormInput() {
+    const MONEY_FEILD = document.getElementById("monField");
+    let userMon = MONEY_FEILD.value;
+    OUTPUT.innerHTML += "<p>Your Money is " + userMon + "</p>";
+
+}
+
