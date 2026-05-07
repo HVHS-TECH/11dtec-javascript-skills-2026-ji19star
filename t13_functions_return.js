@@ -61,10 +61,10 @@ let userMon = MONEY_FEILD.value;
 
 
 //12
-var change = calculateChange;
+var change = calculateChange();
 let changes;
- let moneys;
- let prices;
+let moneys = MONEY_FEILD.value;
+let prices;
 
 
 
@@ -118,8 +118,8 @@ console.log(+userMon + " moneys");
 console.log("task 12 is running");
 
 //13
-console.log("task 12 is running")
-calculateChange(userMon, 4);
+console.log("task 13 is running")
+
 
 
 
@@ -154,23 +154,25 @@ function getMonFormInput() {
     let userMon = MONEY_FEILD.value;
     OUTPUT.innerHTML += "<p>Your Money is " + userMon + "</p>";
     console.log(+userMon);
-    console.log("WORKS");
     if (userMon >= 4) {
         OUTPUT.innerHTML += "<p> DEVOUR THE FOOD</p>";
+        calculateChange(userMon, 4);
     }
     else {
-        OUTPUT.innerHTML += "<p> cant afford chocolate, brokie</p>";
+        if (userMon <= 4) {
+            OUTPUT.innerHTML += "<p> cant afford chocolate, brokie</p>";
+            OUTPUT.innerHTML += "<p> cant afford chocolate, brokie</p>";
+        }
     };
 };
 
 //13
 // price is just the price of chocolate
 function calculateChange(_moneys, _prices) {
-  let changes = _moneys - _prices;
-  console.log(changes)
-  OUTPUT.innerHTML += "you have "+changes+ " change";
-  return changes;
-  
+    let changes = _moneys - _prices;
+    OUTPUT.innerHTML += "you have " + changes + " change";
+    console.log("change SUCESS")
+    return changes;
 };
 
 
