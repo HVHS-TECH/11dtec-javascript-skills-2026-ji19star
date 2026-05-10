@@ -182,22 +182,37 @@ function chocInput() {
 //14 array
 function verseInput() {
     const VERSE_FEILD = document.getElementById("verseField");
-    let verse = VERSE_FEILD.value;
+    //the number/value that the user inputs
+    let verse = VERSE_FEILD.value
+    //makes the string
+    let verses = [];
     console.log("verse")
-    OUTPUT.innerHTML += "You chose: <br>";
-
-    if (bottles = 1) {
-        
-    } else {
-        
-    }
-
+    // ++ adds one onto the end. 
     for (let bottles = 1; bottles < 100; bottles++) {
-        console.log(bottles + " Bottles of milk on the wall!");
+        verses.push(bottles)
     }
-
+    OUTPUT.innerHTML += "You chose:" + verses[verse] + " Bottles of milk on the wall <br>";
 
 };
+
+function verses() {
+
+    for (let bottles = 1; bottles < 100; bottles++) {
+        OUTPUT.innerHTML += bottles + " Bottles of milk on the wall <br>";
+        
+        if (bottles < 0) {
+            OUTPUT.innerHTML += " No moreBottles of milk on the wall <br>";
+        }
+
+
+    }
+
+};
+
+
+
+
+
 
 
 
