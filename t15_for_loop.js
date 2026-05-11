@@ -196,17 +196,12 @@ function verseInput() {
 };
 
 function verses() {
-
     for (let bottles = 1; bottles < 100; bottles++) {
         OUTPUT.innerHTML += bottles + " Bottles of milk on the wall <br>";
-        
         if (bottles < 0) {
             OUTPUT.innerHTML += " No moreBottles of milk on the wall <br>";
         }
-
-
     }
-
 };
 
 
