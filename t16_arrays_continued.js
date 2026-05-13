@@ -78,7 +78,7 @@ for (let bottles = 1; bottles < 99; bottles++) {
 }
 
 //16
-let shopArray = ["wow","wow"];
+let shopArray = [];
 
 
 /*************
