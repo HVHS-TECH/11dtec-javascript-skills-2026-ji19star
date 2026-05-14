@@ -28,6 +28,29 @@
   </div>
 
 
+    <button onclick="showList()"> button</button>
+
+
+
+ <form onsubmit ="return false;">
+      <label><br> Name:<br> </label>
+      <input type="text" id="nameField" name="formName" placeholder="Name" required>
+
+      <label><br> Money:<br> </label>
+      <input type="number" id="monField" name="formMon" placeholder="0" required>   
+
+      <label><br> How much do you like chocolate from 0-3?<br> </label>
+      <input type="number" id="chocField" name="chocoRay" placeholder="0" min="0" max="3">      
+
+      <label><br> Choose a verse!<br> </label>
+      <input type="text" id="verseField" name="verseLoop" placeholder="0" required>
+
+      <label><br> Adding<br> </label>
+      <input type="number" id="shopField" name="shopArray" placeholder="0" required>
+      
+      <input type="submit" onclick="getFormInput(); getMonFormInput(); chocInput(); verseInput(); itemInput()">
+   </form>
+
   <script src="../t20_constants.js"></script>
 
 </body>
